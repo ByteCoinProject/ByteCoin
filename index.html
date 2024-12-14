@@ -9,11 +9,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f9f9f9;
+            background: url('bytecoin_logo.png') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
         }
         header {
-            background: #333;
+            background: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
             color: white;
             padding: 10px 20px;
             text-align: center;
@@ -34,6 +35,9 @@
             padding: 20px;
             max-width: 800px;
             margin: auto;
+            background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         footer {
             background: #333;
@@ -43,6 +47,19 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        .mining-statistics {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .mining-statistics h3 {
+            margin-bottom: 10px;
+        }
+        .mining-statistics p {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -56,6 +73,7 @@
         <a href="#features">Features</a>
         <a href="#download">Download</a>
         <a href="#contact">Contact</a>
+        <a href="#mining-program">Mining Program</a>
     </nav>
     <section id="about">
         <h2>About Byte Coin</h2>
@@ -68,6 +86,13 @@
             <li>10% reward allocation for developers</li>
             <li>Decentralized and transparent network</li>
         </ul>
+    </section>
+    <section id="mining-program" class="mining-statistics">
+        <h3>ByteCoin Mining Program</h3>
+        <p><strong>Current Total Mined:</strong> 1,250,000 ByteCoins</p>
+        <p><strong>Mining Speed:</strong> 50 ByteCoins/min</p>
+        <p><strong>Total Miners:</strong> 150 active miners</p>
+        <p><strong>Rewards Distributed:</strong> 450,000 ByteCoins</p>
     </section>
     <section id="download">
         <h2>Download</h2>
