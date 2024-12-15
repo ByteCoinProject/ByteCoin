@@ -33,16 +33,25 @@
             font-weight: bold;
         }
 
-        /* Logó a Rólunk előtt */
-        .logo-section {
+        /* Rólunk előtti logó és szöveg */
+        .logo-with-text {
             text-align: center;
-            margin: 30px 0 20px;
+            margin: 20px 0;
         }
 
-        .logo-section img {
-            height: 100px;
+        .logo-with-text img {
+            height: 60px;
+            vertical-align: middle;
         }
 
+        .logo-with-text span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-left: 10px;
+            color: #333;
+        }
+
+        /* Szövegtartalom */
         .content {
             padding: 20px;
             text-align: center;
@@ -99,11 +108,12 @@
         <p>Az Ön átjárója a modern, decentralizált kriptovaluták jövőjébe.</p>
     </div>
 
-    <!-- Logó a Rólunk szekció előtt -->
-    <div class="logo-section">
+    <!-- Logó és szöveg Rólunk előtt -->
+    <div class="logo-with-text">
         <a class="logo" href="/hu/">
             <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin">
         </a>
+        <span>ByteCoin</span>
     </div>
 
     <!-- Rólunk szekció -->
