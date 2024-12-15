@@ -33,22 +33,22 @@
             font-weight: bold;
         }
 
-        /* Rólunk előtti logó és szöveg */
+        /* A logó és szöveg a fejlécben */
         .logo-with-text {
-            text-align: center;
-            margin: 20px 0;
+            display: inline-flex;
+            align-items: center;
+            margin-right: 20px;
         }
 
         .logo-with-text img {
-            height: 60px;
-            vertical-align: middle;
+            height: 50px;
+            margin-right: 10px;
         }
 
         .logo-with-text span {
             font-size: 1.5rem;
             font-weight: bold;
-            margin-left: 10px;
-            color: #333;
+            color: #ffffff;
         }
 
         /* Szövegtartalom */
@@ -92,7 +92,12 @@
 
     <!-- Fejléc -->
     <header>
-        <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="Byte Coin Logo">
+        <!-- ByteCoin logó és szöveg -->
+        <div class="logo-with-text">
+            <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin">
+            <span>ByteCoin</span>
+        </div>
+        <!-- Navigációs menü -->
         <nav>
             <a href="#about">Rólunk</a>
             <a href="#features">Funkciók</a>
@@ -106,14 +111,6 @@
     <div class="content">
         <h1>Üdvözöljük a <span class="highlight">ByteCoin</span> világában!</h1>
         <p>Az Ön átjárója a modern, decentralizált kriptovaluták jövőjébe.</p>
-    </div>
-
-    <!-- Logó és szöveg Rólunk előtt -->
-    <div class="logo-with-text">
-        <a class="logo" href="/hu/">
-            <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin">
-        </a>
-        <span>ByteCoin</span>
     </div>
 
     <!-- Rólunk szekció -->
@@ -132,7 +129,7 @@
         </ul>
     </div>
 
-    <!-- Byte Coin Pénztárca -->
+    <!-- ByteCoin Pénztárca -->
     <div class="section" id="wallet">
         <h2>ByteCoin Pénztárca</h2>
         <p>Hamarosan elérhető a ByteCoin hivatalos pénztárca és bányászati szoftvere.</p>
@@ -152,7 +149,7 @@
 
     <!-- Lábjegyzet -->
     <footer>
-        <p>&copy; 2024 Byte Coin. Minden jog fenntartva. | <a href="#privacy">Adatvédelmi irányelvek</a></p>
+        <p>&copy; 2024 ByteCoin. Minden jog fenntartva. | <a href="#privacy">Adatvédelmi irányelvek</a></p>
     </footer>
 
 </body>
