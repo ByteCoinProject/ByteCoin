@@ -3,77 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byte Coin - Innovating Cryptocurrency</title>
+    <title>Byte Coin</title>
     <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.2)
-    ), 
-    url('https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp') 
-    no-repeat center center fixed;
-    background-size: cover;
-    color: #000000; /* Tiszta fekete szöveg */
-}
+        /* Teljes oldal középre igazítás */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Vízszintesen középre */
+            text-align: center; /* Szöveg középre */
+            background: url('https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp') no-repeat center center fixed;
+            background-size: cover; /* Háttérkép kitöltés */
+            color: #000000; /* Fekete szöveg */
+            font-family: Arial, sans-serif;
+        }
 
-h1, h2, h3, p, li {
-    color: #000000; /* Tiszta fekete minden szövegre */
-}
+        /* Navigációs menü stílus */
+        nav ul {
+            list-style: none; /* Pontok eltávolítása */
+            padding: 0;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center; /* Linkek középre */
+            gap: 30px; /* Linkek közötti távolság */
+        }
 
-a {
-    color: #0056b3; /* Linkek színe, hogy jobban látszódjanak */
-    text-decoration: none;
-}
+        nav ul li a {
+            color: #000000; /* Fekete szövegszín */
+            text-decoration: none; /* Aláhúzás eltávolítása */
+            font-weight: bold;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
 
-a:hover {
-    text-decoration: underline;
-}
-     nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Távolság a menüpontok között */
-}
+        nav ul li a:hover {
+            color: #555555; /* Hover esetén sötétszürke */
+            text-decoration: underline; /* Hover aláhúzás */
+        }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #000000; /* Fekete szöveg */
-    text-decoration: none; /* Aláhúzás eltávolítása */
-    font-weight: bold; /* Félkövér szöveg */
-    font-size: 18px;
-    transition: color 0.3s ease; /* Szép átmenet a színváltozásra */
-}
-
-nav ul li a:hover {
-    color: #555555; /* Sötétszürke hover-effektus */
-    text-decoration: underline; /* Hover esetén aláhúzás */
-}
+        /* További tartalom formázása */
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Átlátszó fehér háttér */
+            border-radius: 10px;
+            max-width: 800px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Byte Coin</h1>
-        <p>Your gateway to the future of cryptocurrency</p>
-    </header>
+    <!-- Navigációs menü -->
     <nav>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#download">Download</a>
-        <a href="#contact">Contact</a>
-        <a href="#mining-program">Mining Program</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#mining">Mining Program</a></li>
+        </ul>
     </nav>
+
+    <!-- Tartalom -->
     <section id="about">
-        <h2>About Byte Coin</h2>
-        <p>Byte Coin is an innovative cryptocurrency designed for efficient GPU mining, utilizing the SHA-256 algorithm for secure and fast transactions.</p>
+        <h1>Welcome to Byte Coin</h1>
+        <p>Your gateway to the future of cryptocurrency.</p>
     </section>
+
     <section id="features">
         <h2>Features</h2>
         <ul>
@@ -82,16 +78,24 @@ nav ul li a:hover {
             <li>Decentralized and transparent network</li>
         </ul>
     </section>
+
     <section id="download">
         <h2>Download</h2>
         <p>Coming soon: Byte Coin wallet and mining software.</p>
     </section>
+
     <section id="contact">
         <h2>Contact</h2>
         <p>Email us at: <a href="mailto:support@bytecoin.com">support@bytecoin.com</a></p>
     </section>
+
+    <section id="mining">
+        <h2>Mining Program</h2>
+        <p>Learn more about our mining opportunities and rewards.</p>
+    </section>
+
     <footer>
-        &copy; 2024 Byte Coin. All Rights Reserved.
+        <p>&copy; 2024 Byte Coin. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
