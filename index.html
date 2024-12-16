@@ -20,32 +20,41 @@
             color: #ffffff;
             padding: 20px 0;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            position: relative;
         }
 
-        /* A logó és szöveg a fejlécben */
-        .logo-with-text {
+        /* Bal oldali logó */
+        .left-logo {
             display: flex;
             align-items: center;
-            margin-right: 20px;
+            margin-left: 20px;
         }
 
-        .logo-with-text img {
+        .left-logo img {
             height: 50px;
             margin-right: 10px;
         }
 
-        .logo-with-text span {
+        .left-logo span {
             font-size: 1.5rem;
             font-weight: bold;
             color: #ffffff;
+        }
+
+        /* Középső logó */
+        .center-logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         /* Navigációs menü */
         nav {
             display: flex;
             justify-content: center;
+            flex: 1;
         }
 
         nav a {
@@ -70,7 +79,6 @@
             color: #ff9900;
         }
 
-        /* Szekciók */
         .section {
             margin: 30px auto;
             padding: 20px;
@@ -97,10 +105,18 @@
 
     <!-- Fejléc -->
     <header>
-        <div class="logo-with-text">
+        <!-- Bal oldali logó -->
+        <div class="left-logo">
             <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin">
             <span>ByteCoin</span>
         </div>
+        
+        <!-- Középső logó -->
+        <div class="center-logo">
+            <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin Logo">
+        </div>
+
+        <!-- Navigációs menü -->
         <nav>
             <a href="#about">Rólunk</a>
             <a href="#features">Funkciók</a>
@@ -116,17 +132,11 @@
         <p>Az Ön átjárója a modern, decentralizált kriptovaluták jövőjébe.</p>
     </div>
 
-    <!-- Rólunk szekció -->
     <div class="section" id="about">
-        <div class="logo-with-text" style="text-align: center; margin-bottom: 20px;">
-            <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin" style="height: 60px; margin-right: 10px;">
-            <span style="font-size: 2rem; font-weight: bold; color: #333;">ByteCoin</span>
-        </div>
         <h2>Rólunk</h2>
         <p>A ByteCoin egy innovatív kriptovaluta, amely biztonságos GPU bányászatra és SHA-256 algoritmusra épül, gyors tranzakciókat biztosítva.</p>
     </div>
 
-    <!-- Funkciók szekció -->
     <div class="section" id="features">
         <h2>Funkciók</h2>
         <ul>
@@ -136,25 +146,21 @@
         </ul>
     </div>
 
-    <!-- ByteCoin Pénztárca -->
     <div class="section" id="wallet">
         <h2>ByteCoin Pénztárca</h2>
         <p>Hamarosan elérhető a ByteCoin hivatalos pénztárca és bányászati szoftvere.</p>
     </div>
 
-    <!-- Bányászati Program -->
     <div class="section" id="mining">
         <h2>Bányászati Program</h2>
         <p>Vegyen részt a hálózat biztonságának fenntartásában és jutalmak szerzésében GPU-val.</p>
     </div>
 
-    <!-- Kapcsolat -->
     <div class="section" id="contact">
         <h2>Kapcsolat</h2>
         <p>Vegye fel velünk a kapcsolatot: <a href="mailto:support@bytecoin.com">support@bytecoin.com</a></p>
     </div>
 
-    <!-- Lábjegyzet -->
     <footer>
         <p>&copy; 2024 ByteCoin. Minden jog fenntartva. | <a href="#privacy">Adatvédelmi irányelvek</a></p>
     </footer>
