@@ -15,14 +15,14 @@
         }
 
         /* Fejléc stílus */
-       header {
-    background-color: #0f172a;
-    color: #ffffff;
-    padding: 25px 0;  /* Növelt padding, hogy lejjebb tolja az egészet */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+        header {
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 35px 0;  /* Fejléc lejjebb tolása */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
         /* Bal oldali logó */
         .left-logo {
@@ -45,17 +45,11 @@
         /* Középső logó és szöveg */
         .center-logo {
             position: absolute;
-            top: -40px; /* Adjusted for 5mm shift */
-            top: -25px; /* Adjusted for 5mm shift */
+            top: -25px; /* Kisebb finomhangolás, ha kell */
             left: 50%;
             transform: translateX(-50%);
             display: flex;
             align-items: center;
-             /* Középső logó */
-    header img:nth-of-type(2) {
-        position: relative;
-        top: -25px; /* finomhangolás */
-    }
         }
 
         .center-logo img {
@@ -74,7 +68,6 @@
             display: flex;
             justify-content: center;
             flex: 1;
-            margin-top: 5mm; /* 5mm adjustment */
         }
 
         nav a {
@@ -194,4 +187,3 @@
 
 </body>
 </html>
-
