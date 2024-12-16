@@ -15,66 +15,37 @@
         }
 
         /* Fejléc stílus */
-       header {
-    background-color: #0f172a;
-    color: #ffffff;
-    padding: 25px 0;  /* Növelt padding, hogy lejjebb tolja az egészet */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-        /* Bal oldali logó */
-        .left-logo {
+        header {
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 20px 0;
             display: flex;
+            justify-content: center;
             align-items: center;
-            margin-left: 20px;
         }
 
-        .left-logo img {
+        /* A logó és szöveg a fejlécben */
+        .logo-with-text {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .logo-with-text img {
             height: 50px;
             margin-right: 10px;
         }
 
-        .left-logo span {
+        .logo-with-text span {
             font-size: 1.5rem;
             font-weight: bold;
             color: #ffffff;
         }
 
-        /* Középső logó és szöveg */
-        .center-logo {
-            position: absolute;
-            top: -40px; /* Adjusted for 5mm shift */
-            top: -25px; /* Adjusted for 5mm shift */
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            align-items: center;
-             /* Középső logó */
-    header img:nth-of-type(2) {
-        position: relative;
-        top: -25px; /* finomhangolás */
-    }
-        }
-
-        .center-logo img {
-            height: 50px;
-        }
-
-        .center-logo span {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ffffff;
-            margin-left: 10px;
-        }
-
-        /* Középső navigációs menü */
+        /* Navigációs menü */
         nav {
             display: flex;
             justify-content: center;
-            flex: 1;
-            margin-top: 5mm; /* 5mm adjustment */
         }
 
         nav a {
@@ -99,6 +70,7 @@
             color: #ff9900;
         }
 
+        /* Szekciók */
         .section {
             margin: 30px auto;
             padding: 20px;
@@ -125,19 +97,10 @@
 
     <!-- Fejléc -->
     <header>
-        <!-- Bal oldali logó -->
-        <div class="left-logo">
-            <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin Logo">
+        <div class="logo-with-text">
+            <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin">
             <span>ByteCoin</span>
         </div>
-
-        <!-- Középső logó és szöveg -->
-        <div class="center-logo">
-            <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin Logo">
-            <span>ByteCoin</span>
-        </div>
-
-        <!-- Navigációs menü -->
         <nav>
             <a href="#about">Rólunk</a>
             <a href="#features">Funkciók</a>
@@ -155,6 +118,10 @@
 
     <!-- Rólunk szekció -->
     <div class="section" id="about">
+        <div class="logo-with-text" style="text-align: center; margin-bottom: 20px;">
+            <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin" style="height: 60px; margin-right: 10px;">
+            <span style="font-size: 2rem; font-weight: bold; color: #333;">ByteCoin</span>
+        </div>
         <h2>Rólunk</h2>
         <p>A ByteCoin egy innovatív kriptovaluta, amely biztonságos GPU bányászatra és SHA-256 algoritmusra épül, gyors tranzakciókat biztosítva.</p>
     </div>
