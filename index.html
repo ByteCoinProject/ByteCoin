@@ -18,42 +18,12 @@
         header {
             background-color: #0f172a;
             color: #ffffff;
-            padding: 20px 0;
+            padding: 15px 0;
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
-        /* Bal oldali logó */
-        .left-logo {
-            display: flex;
-            align-items: center;
-            position: absolute;
-            left: 20px;
-        }
-
-        .left-logo img {
+        header img {
             height: 50px;
-            margin-right: 10px;
-        }
-
-        .left-logo span {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-        /* Középső logó */
-        .center-logo img {
-            height: 50px;
-        }
-
-        /* Navigációs menü */
-        header nav {
-            display: flex;
-            justify-content: center;
-            flex: 1;
         }
 
         header nav a {
@@ -61,6 +31,24 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+        }
+
+        /* A logó és szöveg a fejlécben */
+        .logo-with-text {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .logo-with-text img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-with-text span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
         }
 
         /* Szövegtartalom */
@@ -98,20 +86,26 @@
             color: #ff9900;
             text-decoration: none;
         }
+
+        /* Új logó helyezkedés */
+        .center-logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .center-logo img {
+            height: 50px;
+        }
     </style>
 </head>
 <body>
 
     <!-- Fejléc -->
     <header>
-        <!-- Bal oldali logó -->
-        <div class="left-logo">
+        <!-- ByteCoin logó és szöveg -->
+        <div class="logo-with-text">
             <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin">
             <span>ByteCoin</span>
-        </div>
-        <!-- Középső logó -->
-        <div class="center-logo">
-            <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin Logo">
         </div>
         <!-- Navigációs menü -->
         <nav>
@@ -131,6 +125,10 @@
 
     <!-- Rólunk szekció -->
     <div class="section" id="about">
+        <div class="logo-with-text" style="text-align: center; margin-bottom: 20px;">
+            <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin" style="height: 60px; margin-right: 10px;">
+            <span style="font-size: 2rem; font-weight: bold; color: #333;">ByteCoin</span>
+        </div>
         <h2>Rólunk</h2>
         <p>A ByteCoin egy innovatív kriptovaluta, amely biztonságos GPU bányászatra és SHA-256 algoritmusra épül, gyors tranzakciókat biztosítva.</p>
     </div>
@@ -147,6 +145,9 @@
 
     <!-- ByteCoin Pénztárca -->
     <div class="section" id="wallet">
+        <div class="center-logo">
+            <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin">
+        </div>
         <h2>ByteCoin Pénztárca</h2>
         <p>Hamarosan elérhető a ByteCoin hivatalos pénztárca és bányászati szoftvere.</p>
     </div>
