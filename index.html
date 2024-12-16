@@ -23,6 +23,7 @@
             align-items: center;
             justify-content: space-between;
             position: relative;
+            padding-left: 60px;  /* Helyet ad a bal oldali logónak */
         }
 
         /* Bal oldali logó */
@@ -31,6 +32,7 @@
             align-items: center;
             position: absolute;
             left: 20px;  /* Bal oldali elhelyezkedés */
+            bottom: 10px; /* Alulról állítva */
         }
 
         .left-logo img {
@@ -44,15 +46,24 @@
             color: #ffffff;
         }
 
-        /* Középső logó */
+        /* Középső logó és szöveg */
         .center-logo {
             position: absolute;
             left: 50%;  /* Középre helyezés */
             transform: translateX(-50%);
+            display: flex;
+            align-items: center;
         }
 
         .center-logo img {
             height: 40px;  /* Középső logó kisebb méret */
+            margin-right: 10px;
+        }
+
+        .center-logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
         }
 
         /* Középső navigációs menü */
@@ -114,9 +125,10 @@
             <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin Logo">
             <span>ByteCoin</span>
         </div>
-        <!-- Középső logó -->
+        <!-- Középső logó és szöveg -->
         <div class="center-logo">
             <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="Byte Coin Logo">
+            <span>ByteCoin</span>
         </div>
         <!-- Navigációs menü -->
         <nav>
