@@ -43,16 +43,25 @@
             color: #ffffff;
         }
 
-        /* Középső logó */
+        /* Középső logó és szöveg */
         .center-logo {
             position: absolute;
-            top: -10px; /* Adjust this value to move the logo upwards */
+            top: -20px; /* Adjust this value to move the logo upwards further */
             left: 50%;
             transform: translateX(-50%);
+            display: flex;
+            align-items: center;
         }
 
         .center-logo img {
             height: 50px;
+        }
+
+        .center-logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-left: 10px; /* Space between logo and text */
         }
 
         /* Középső navigációs menü */
@@ -116,9 +125,10 @@
             <span>ByteCoin</span>
         </div>
 
-        <!-- Középső logó -->
+        <!-- Középső logó és szöveg -->
         <div class="center-logo">
             <img src="https://raw.githubusercontent.com/ByteCoinProject/ByteCoin/main/bytecoin-logo.webp" alt="ByteCoin Logo">
+            <span>ByteCoin</span>
         </div>
 
         <!-- Navigációs menü -->
